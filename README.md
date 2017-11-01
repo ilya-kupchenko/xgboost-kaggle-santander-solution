@@ -21,5 +21,4 @@ The solution is based on the XG-Boost algorithm that was tweaked to gain the bes
 Hereafter you can find the detailed PDF-report telling more about the way how our team approached to the final solution.
 
 
-![Full report](/MLCLASS_Spring16_Kupchenko_Shenoy_1d.pdf)
-Format: ![Full report](https://www.dropbox.com/s/m4kvbndkzu7k9bk/MLCLASS_Spring16_Kupchenko_Shenoy_1d.pdf?dl=0)
+![Full report]({{ "/MLCLASS_Spring16_Kupchenko_Shenoy_1d.pdf" | absolute_url }})
