@@ -4,16 +4,12 @@ In this 2016 [competition](https://www.kaggle.com/c/santander-customer-satisfact
 
 The data was represented by hundreds of anonymized features to predict if a customer is satisfied or dissatisfied with their banking experience. For each ID in the test data set, we predicted a probability for the TARGET variable. The output file needed to contain a header and have the following format:
 
-ID|TARGET
----------
-2|0
----
-5|0
----
-6|0
----
-etc.
-----
+| ID | TARGET |
+|----|--------|
+|2|0|
+|5|0|
+|6|0|
+|etc.|etc.|
 
 ### Evaluation
 
