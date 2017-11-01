@@ -32,20 +32,20 @@ bool_train_names = [col for col in train if train[[col]].isin([0, 1]).all().valu
 
 cols = train.columns
 for i in range(len(cols)-1):
-    found = False     
+    found = False
     for bool_col in bool_train_names:
         if (~ (cols[i] in bool_col)):
             found = True
             continue
     if ~found:
-        if (min(train[cols[i]]) < 1): 
+        if (min(train[cols[i]]) < 1):
             train[cols[i]] = np.log(train[cols[i]] + np.abs(np.min(train[cols[i]])) + 1)
             test[cols[i]] = np.log(test[cols[i]]  + np.abs(np.min(train[cols[i]])) + 1)
         else:
             train[cols[i]] = np.log(train[cols[i]] - np.abs(np.min(train[cols[i]])) + 1)
             test[cols[i]] = np.log(test[cols[i]] - np.abs(np.min(train[cols[i]])) + 1)
         train[cols[i]] = (train[cols[i]] - np.mean(train[cols[i]])) / (np.max(train[cols[i]]) - np.min(train[cols[i]]))
-        
+
 
 y_train = train['TARGET'].values
 X_train = train.drop(['ID','TARGET'], axis=1).values
@@ -62,7 +62,7 @@ print sorted(map(lambda x: round(x, 4), rf.feature_importances_))
 
 #rlasso = RandomizedLasso(alpha=0.025)
 #X_train = rlasso.fit_transform(X_train, y_train)
- 
+
 #print "Features sorted by their score:"
 #print sorted(map(lambda x: round(x, 4), rlasso.scores_), reverse=True)
 

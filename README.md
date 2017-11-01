@@ -1,37 +1,25 @@
-## Welcome to GitHub Pages
+## Santander Customer Satisfaction Contest
 
-You can use the [editor on GitHub](https://github.com/ilya-kupchenko/octocat.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+In this [competition](https://www.kaggle.com/c/santander-customer-satisfaction#description) of 2016 Santander Bank is asking Kagglers to help them identify dissatisfied customers early in their relationship. Our final solution for the contest was implemented in Python, using SkLearn and Pandas libraries.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The data was represented by hundreds of anonymized features to predict if a customer is satisfied or dissatisfied with their banking experience. For each ID in the test data set, you must predict a probability for the TARGET variable. The file should contain a header and have the following format:
 
-### Markdown
+ID,TARGET
+2,0
+5,0
+6,0
+etc.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Evaluation
 
-```markdown
-Syntax highlighted code block
+Submissions were evaluated on area under the ROC curve between the predicted probability and the observed target. Our best prediction was 0.824047 and resulted in 2188-th place out of 5183 participants.
 
-# Header 1
-## Header 2
-### Header 3
+The solution is based on the XG-Boost algorithm that was tweaked to gain the best performance.
 
-- Bulleted
-- List
+###Details
 
-1. Numbered
-2. List
+Hereafter you can find the detailed PDF-report telling more about the way how our team approached to the final solution.
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ilya-kupchenko/octocat.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+![Full report](/MLCLASS_Spring16_Kupchenko_Shenoy_1d.pdf)
+Format: ![Full report](https://www.dropbox.com/s/m4kvbndkzu7k9bk/MLCLASS_Spring16_Kupchenko_Shenoy_1d.pdf?dl=0)
