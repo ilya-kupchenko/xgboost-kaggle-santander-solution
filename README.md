@@ -21,6 +21,6 @@ The solution is based on the XG-Boost algorithm that was tweaked to gain the bes
 
 Below you can find the the abstract of our PDF-report, telling more in detail how our team approached generating our solution:
 
-![Abstract](/images/abstract.png)
+![Abstract](/images/images/MLCLASS_Spring16_Kupchenko_Shenoy_1d.png)
 
 The full version ofthe report can be found ![here](/MLCLASS_Spring16_Kupchenko_Shenoy_1d.pdf).
